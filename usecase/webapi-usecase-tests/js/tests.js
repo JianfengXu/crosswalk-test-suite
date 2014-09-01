@@ -101,10 +101,28 @@ function getParms() {
   return parms["test_name"];
 }
 
+function initStep(testname) {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  var addr = window.location.href;
+  var str = addr.substring(addr.indexOf("/tests/") + 7,addr.indexOf("/index.html"))
+  script.src = "../../steps/" + str + "/step.js";
+  document.body.appendChild(script);
+  script.onload = script.onreadystatechange = function() {
+    if(!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+      if(step) {
+        $("#popup_info").append(step);   
+      }
+     }
+    script.onload = script.onreadystatechange = null;
+  }
+}
+
 $(document).ready(function(){
   var testname = getParms();
   document.title = testname;
   $("#main_page_title").text(testname);
+  initStep(testname);
 });
 
 $(document).bind('pagecreate', function () {

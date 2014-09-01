@@ -72,6 +72,7 @@ function create_wgt(){
     cp -af $BUILD_ROOT/css $BUILD_DEST/
     cp -af $BUILD_ROOT/tests $BUILD_DEST/
     cp -af $BUILD_ROOT/res $BUILD_DEST/
+    cp -af $BUILD_ROOT/steps $BUILD_DEST/
     mkdir -p $BUILD_DEST/opt/$name/res/media
     zip -rq $BUILD_DEST/opt/$name/$name.wgt *
 
@@ -135,6 +136,7 @@ EOF
     cp -af $BUILD_ROOT/css $BUILD_DEST/
     cp -af $BUILD_ROOT/tests $BUILD_DEST/
     cp -af $BUILD_ROOT/res $BUILD_DEST/
+    cp -af $BUILD_ROOT/steps $BUILD_DEST/
     mkdir -p $BUILD_DEST/opt/$name/res/media
 
     cd $BUILD_ROOT/crosswalk
