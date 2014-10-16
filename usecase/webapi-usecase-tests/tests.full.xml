@@ -37,6 +37,8 @@
       </testcase>
       <testcase component="usecase" type="functional_positive" status="approved" execution_type="manual" platform="tizen" priority="P0" id="Package" purpose="Package">
       </testcase>
+      <testcase component="usecase" type="functional_positive" status="designed" execution_type="manual" platform="tizen" priority="P0" id="ApplicationSwitch" purpose="ApplicationSwitch">
+      </testcase>
     </set>
     <set name="Tizen Communication">
       <testcase component="usecase" type="functional_positive" status="designed" execution_type="manual" platform="tizen" priority="P0" id="Bluetooth" purpose="Bluetooth">

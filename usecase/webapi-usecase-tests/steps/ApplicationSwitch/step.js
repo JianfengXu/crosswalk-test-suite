@@ -1,0 +1,13 @@
+var step = '<font class="fontSize">'
+            +'<p>Test Purpose: </p>'
+            +'<p>Verifies current Application hide and show valid.</p>'
+            +'<p>Test Steps: </p>'
+              +'<ol>'
+                +'<li>Run the application, check if current application information can be shown</li>'
+                +'<li>Click \'Hide App\' button, check if the current application can be hiden</li>'
+                +'<li>Wati 5 seconds, check if the current application can be shown</li>'
+                +'<li>Repeat 2 and 3 steps several times, check if the current application can be shown and hiden normally.</li>'
+              +'</ol>'
+            +'<p>Expected Result: </p>'
+            +'<p>Test passes if application information, application hide and show normally.</p>'
+          +'</font>';

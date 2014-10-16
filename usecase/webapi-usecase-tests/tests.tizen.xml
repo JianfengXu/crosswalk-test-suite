@@ -29,6 +29,8 @@
       </testcase>
       <testcase component="usecase" execution_type="manual" id="Package" purpose="Package">
       </testcase>
+      <testcase component="usecase" execution_type="manual" id="ApplicationSwitch" purpose="ApplicationSwitch">
+      </testcase>
     </set>
     <set name="Tizen Communication">
       <testcase component="usecase" execution_type="manual" id="NBS" purpose="NBS">
