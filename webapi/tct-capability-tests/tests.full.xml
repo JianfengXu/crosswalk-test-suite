@@ -143,31 +143,6 @@
           </spec>
         </specs>
       </testcase>
-      <testcase check_unsupport_error="true" component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_bluetooth" priority="P1" purpose="Check that if Bluetooth API is not supported on the device, it returns 'undefined' when being accessed" status="approved" type="compliance">
-        <description>
-          <pre_condition />
-          <post_condition />
-          <steps>
-            <step order="1">
-              <step_desc>Check if Bluetooth API is not supported on the device, it returns 'undefined' when accessed.</step_desc>
-              <expected>Pass</expected>
-            </step>
-          </steps>
-          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_bluetooth.html</test_script_entry>
-        </description>
-        <specs>
-          <spec>
-            <spec_assertion category="Tizen Device API Specifications" element_name="getCapabilities" element_type="method" interface="SystemInfo" section="System" specification="SystemInfo" />
-            <spec_url>https://developer.tizen.org/help/topic/org.tizen.web.device.apireference/tizen/systeminfo.html</spec_url>
-            <spec_statement>TBD</spec_statement>
-          </spec>
-          <spec>
-            <spec_assertion category="Tizen Device API Specifications" element_name="bluetooth" element_type="attribute" interface="BluetoothManagerObject" section="Communication" specification="Bluetooth" />
-            <spec_url>https://developer.tizen.org/help/topic/org.tizen.web.device.apireference/tizen/bluetooth.html</spec_url>
-            <spec_statement>TBD</spec_statement>
-          </spec>
-        </specs>
-      </testcase>
       <testcase check_unsupport_error="true" component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_nfc" priority="P1" purpose="Check that if NFC API is not supported on the device, it returns 'undefined' when being accessed" status="approved" type="compliance">
         <description>
           <pre_condition />
@@ -218,17 +193,17 @@
           </spec>
         </specs>
       </testcase>
-    <testcase check_unsupport_error="true" component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_download_cellular" priority="P1" purpose="Check that if telephony is not supported on the device, it returns 'NotSupportedError' when being requested" status="approved" type="compliance">
+      <testcase check_unsupport_error="true" component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_push" priority="P1" purpose="Check that if push API is not supported on the device, it returns 'undefined' when being accessed" status="approved" type="compliance">
         <description>
           <pre_condition />
           <post_condition />
           <steps>
             <step order="1">
-              <step_desc>Check if telephony is not supported on the device, it returns 'NotSupportedError' when requested.</step_desc>
+              <step_desc>Check if push API is not supported on the device, it returns 'undefined' when accessed.</step_desc>
               <expected>Pass</expected>
             </step>
           </steps>
-          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_download_cellular.html</test_script_entry>
+          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_push.html</test_script_entry>
         </description>
         <specs>
           <spec>
@@ -237,23 +212,23 @@
             <spec_statement>TBD</spec_statement>
           </spec>
           <spec>
-            <spec_assertion category="Tizen Device API Specifications" element_name="start" element_type="method" interface="DownloadManager" section="Content" specification="Download" />
-            <spec_url>https://developer.tizen.org/help/topic/org.tizen.web.device.apireference/tizen/download.html</spec_url>
+            <spec_assertion category="Tizen Device API Specifications" element_name="push" element_type="attribute" interface="PushManagerObject" section="Social" specification="push" />
+            <spec_url>https://developer.tizen.org/dev-guide/2.3.0/org.tizen.mobile.web.device.apireference/tizen/push.html</spec_url>
             <spec_statement>TBD</spec_statement>
           </spec>
         </specs>
       </testcase>
-      <testcase check_unsupport_error="true" component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_download_wifi" priority="P1" purpose="Check that if WiFi is not supported on the device, it returns 'NotSupportedError' when being requested" status="approved" type="compliance">
+      <testcase check_unsupport_error="true" component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_secureElement" priority="P1" purpose="Check that if secureElement API is not supported on the device, it returns 'undefined' when being accessed" status="approved" type="compliance">
         <description>
           <pre_condition />
           <post_condition />
           <steps>
             <step order="1">
-              <step_desc>Check if WiFi is not supported on the device, it returns 'NotSupportedError' when requested.</step_desc>
+              <step_desc>Check if secureElement API is not supported on the device, it returns 'undefined' when accessed.</step_desc>
               <expected>Pass</expected>
             </step>
           </steps>
-          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_download_wifi.html</test_script_entry>
+          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_secureElement.html</test_script_entry>
         </description>
         <specs>
           <spec>
@@ -262,8 +237,8 @@
             <spec_statement>TBD</spec_statement>
           </spec>
           <spec>
-            <spec_assertion category="Tizen Device API Specifications" element_name="start" element_type="method" interface="DownloadManager" section="Content" specification="Download" />
-            <spec_url>https://developer.tizen.org/help/topic/org.tizen.web.device.apireference/tizen/download.html</spec_url>
+            <spec_assertion category="Tizen Device API Specifications" element_name="secureElement" element_type="attribute" interface="SEServiceManagerObject" section="Social" specification="secureElement" />
+            <spec_url>https://developer.tizen.org/dev-guide/2.3.0/org.tizen.mobile.web.device.apireference/tizen/se.html</spec_url>
             <spec_statement>TBD</spec_statement>
           </spec>
         </specs>

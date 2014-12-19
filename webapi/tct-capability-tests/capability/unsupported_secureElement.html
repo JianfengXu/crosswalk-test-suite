@@ -26,19 +26,19 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Authors:
-        Zhang, Ge <gex.zhang@intel.com>
+        xu, jianfeng <jianfengx.xu@intel.com>
 
 -->
 
 <html lang="en">
   <head>
-    <title>Capability Test: unsupported_bluetooth</title>
+    <title>Capability Test: unsupported_secureElement</title>
     <link rel="author" title="Intel" href="http://www.intel.com"/>
     <link rel="help" href="https://developer.tizen.org/help/topic/org.tizen.web.apireference.relatedpage/html/feature/reqfeatures.html"/>
     <link rel="help" href="https://developer.tizen.org/help/topic/org.tizen.web.device.apireference/tizen/systeminfo.html"/>
-    <link rel="help" href="https://developer.tizen.org/help/topic/org.tizen.web.device.apireference/tizen/bluetooth.html"/>
+    <link rel="help" href="https://developer.tizen.org/dev-guide/2.3.0/org.tizen.mobile.web.device.apireference/tizen/se.html"/>
     <meta name="flags" content=""/>
-    <meta name="assert" content="Check if Bluetooth API is not supported on the device, it returns 'undefined' when accessed"/>
+    <meta name="assert" content="Check if secureElement API is not supported on the device, it returns 'undefined' when accessed"/>
     <meta charset="utf-8"/>
     <script src="support/caps.js"></script>
   </head>
@@ -46,7 +46,7 @@ Authors:
     <div id="log"></div>
     <script>
         test(function () {
-            check_unsupported("bluetooth", tizen.bluetooth);
+            check_unsupported("secureElement", tizen.seService);
         }, document.title);
     </script>
   </body>

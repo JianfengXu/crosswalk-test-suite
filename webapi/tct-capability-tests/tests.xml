@@ -38,11 +38,6 @@
           <test_script_entry>/opt/tct-capability-tests/capability/caps_displayresolution.html</test_script_entry>
         </description>
         </testcase>
-      <testcase component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_bluetooth" purpose="Check that if Bluetooth API is not supported on the device, it returns 'undefined' when being accessed">
-        <description>
-          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_bluetooth.html</test_script_entry>
-        </description>
-        </testcase>
       <testcase component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_nfc" purpose="Check that if NFC API is not supported on the device, it returns 'undefined' when being accessed">
         <description>
           <test_script_entry>/opt/tct-capability-tests/capability/unsupported_nfc.html</test_script_entry>
@@ -53,16 +48,16 @@
           <test_script_entry>/opt/tct-capability-tests/capability/unsupported_callhistory.html</test_script_entry>
         </description>
         </testcase>
-    <testcase component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_download_cellular" purpose="Check that if telephony is not supported on the device, it returns 'NotSupportedError' when being requested">
+      <testcase component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_push" purpose="Check that if push API is not supported on the device, it returns 'undefined' when being accessed">
         <description>
-          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_download_cellular.html</test_script_entry>
+          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_push.html</test_script_entry>
         </description>
-        </testcase>
-      <testcase component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_download_wifi" purpose="Check that if WiFi is not supported on the device, it returns 'NotSupportedError' when being requested">
+      </testcase>
+      <testcase component="Tizen Device APIs/System/SystemInfo" execution_type="auto" id="unsupported_secureElement" purpose="Check that if secureElement API is not supported on the device, it returns 'undefined' when being accessed">
         <description>
-          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_download_wifi.html</test_script_entry>
+          <test_script_entry>/opt/tct-capability-tests/capability/unsupported_secureElement.html</test_script_entry>
         </description>
-        </testcase>
+      </testcase>
     </set>
   </suite>
 </test_definition>
